@@ -1,7 +1,7 @@
 {
   "name": "whatsap_verify",
   "version": "1.0.0",
-  "description": "",
+  "description": "A WhatsApp verification bot built with Node.js and Prisma.",
   "homepage": "https://github.com/MrEgyptian/whatsap_verify#readme",
   "bugs": {
     "url": "https://github.com/MrEgyptian/whatsap_verify/issues"
@@ -11,11 +11,13 @@
     "url": "git+https://github.com/MrEgyptian/whatsap_verify.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "@MrEgyptian",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "prisma generate && prisma migrate deploy",
+    "run": "node index.js"
   },
   "devDependencies": {
     "prisma": "^7.5.0"
